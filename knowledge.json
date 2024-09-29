@@ -1,0 +1,62 @@
+[
+  {
+    "pregunta": "¿Mi computadora no enciende?",
+    "respuesta": [
+      "Asegúrate de que el cable de alimentación esté conectado correctamente y revisa si hay señales de energía en el equipo. Si el problema persiste, podría ser un problema con la fuente de alimentación o la placa base."
+    ]
+  },
+  {
+    "pregunta": "mi computadora no enciende",
+    "respuesta": [
+      "Asegúrate de que el cable de alimentación esté conectado correctamente y revisa si hay señales de energía en el equipo. Si el problema persiste, podría ser un problema con la fuente de alimentación o la placa base."
+    ]
+  },
+  {
+    "pregunta": "¿Cómo soluciono problemas de rendimiento?",
+    "respuesta": [
+      "Primero, revisa si hay programas que están usando demasiados recursos. Puedes usar el Administrador de Tareas para esto. Asegúrate también de que tu sistema operativo y tus programas estén actualizados."
+    ]
+  },
+  {
+    "pregunta": "como soluciono problemas de rendimiento",
+    "respuesta": [
+      "Primero, revisa si hay programas que están usando demasiados recursos. Puedes usar el Administrador de Tareas para esto. Asegúrate también de que tu sistema operativo y tus programas estén actualizados."
+    ]
+  },
+  {
+    "pregunta": "tengo un problema",
+    "respuesta": [
+      "Claro, cuéntame cómo te puedo ayudar."
+    ]
+  },
+  {
+    "pregunta": "(.*)",
+    "respuesta": [
+      "Lo siento, no tengo una respuesta para eso. Puedes buscar ayuda específica en línea o consultar con un técnico especializado."
+    ]
+  },
+  {
+    "pregunta": "hola",
+    "respuesta": [
+      "Hola, mucho gusto"
+    ]
+  },
+  {
+    "pregunta": "gracias",
+    "respuesta": [
+      "¡De nada! si tienes alguna otra pregunta con gusto te ayudaré"
+    ]
+  },
+  {
+    "pregunta": "como estas",
+    "respuesta": [
+      "¡Hola! Estoy muy bien, gracias por preguntar. ¿Y tú, cómo estás hoy? ¿En qué puedo ayudarte?"
+    ]
+  },
+  {
+    "pregunta": "como estas?",
+    "respuesta": [
+      "¡Hola! Estoy muy bien, gracias por preguntar. ¿Y tú, cómo estás hoy? ¿En qué puedo ayudarte?"
+    ]
+  }
+]
