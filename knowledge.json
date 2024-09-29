@@ -18,6 +18,240 @@
     ]
   },
   {
+    "pregunta": "¿Por qué mi computadora está lenta?",
+    "respuesta":[
+     "Puede deberse a varios factores como falta de espacio en disco, demasiadas aplicaciones en segundo plano o un virus. Te recomiendo limpiar el disco duro y revisar el administrador de tareas."
+    ]
+  },
+  {
+      "pregunta": "¿Cómo puedo mejorar el rendimiento de mi PC?",
+      "respuesta": [
+        "Considera agregar más memoria RAM, desactivar programas de inicio innecesarios y realizar una limpieza de disco."
+    ]
+  },
+  {
+      "pregunta": "¿Qué hacer si mi disco duro hace ruidos extraños?",
+      "respuesta": [
+      "Es posible que esté fallando. Haz una copia de seguridad de tus datos inmediatamente y considera reemplazarlo."
+      ]
+  },
+  {
+      "pregunta": "¿Por qué no puedo conectarme a Wi-Fi?",
+      "respuesta": [
+      "Revisa que el enrutador esté encendido y funcionando, asegúrate de que la conexión Wi-Fi de tu dispositivo esté habilitada, y verifica la configuración de red."
+    ]
+  },
+  {
+      "pregunta": "¿Qué significa el error de pantalla azul 'IRQL_NOT_LESS_OR_EQUAL'?",
+      "respuesta":[
+       "Este error suele estar relacionado con problemas de hardware o controladores. Intenta actualizar los controladores o desinstalar software reciente."
+      ]
+  },
+    {
+      "pregunta": "¿Cómo puedo mejorar el rendimiento de mi PC?",
+      "respuesta": [
+        "Considera agregar más memoria RAM, desactivar programas de inicio innecesarios y realizar una limpieza de disco."
+      ]
+    },
+    {
+      "pregunta": "¿Qué debería revisar si mi computadora se congela?",
+      "respuesta": [
+        "Revisa si hay sobrecalentamiento del procesador, problemas de memoria RAM, o algún conflicto con el software que estés utilizando."
+      ]
+    },
+    {
+      "pregunta": "¿Cómo actualizar los controladores de mi tarjeta gráfica?",
+      "respuesta": [
+        "Visita el sitio web del fabricante de la tarjeta gráfica, descarga la última versión de los controladores, e instálalos siguiendo las instrucciones."
+      ]
+    },
+    {
+      "pregunta": "¿Qué hacer si mi disco duro hace ruidos extraños?",
+      "respuesta": [
+        "Haz una copia de seguridad de tus datos de inmediato y considera reemplazar el disco duro, ya que los ruidos extraños son un signo de fallo inminente."
+      ]
+    },
+    {
+      "pregunta": "¿Cómo puedo saber si mi fuente de poder está fallando?",
+      "respuesta": [
+        "Si tu PC se apaga inesperadamente, no enciende, o notas que los ventiladores no funcionan correctamente, es posible que la fuente de poder esté fallando."
+      ]
+    },
+    {
+      "pregunta": "¿Qué significa cuando las luces de la placa base parpadean?",
+      "respuesta": [
+        "Las luces de la placa base pueden indicar un problema de hardware, como una memoria RAM defectuosa, fallo de la CPU, o problemas con la fuente de alimentación."
+      ]
+    },
+    {
+      "pregunta": "¿Cómo diagnosticar problemas con la memoria RAM?",
+      "respuesta": [
+        "Usa herramientas como 'MemTest86' para analizar la memoria RAM en busca de errores. También puedes intentar remover módulos de RAM y probarlos individualmente."
+      ]
+    },
+    {
+      "pregunta": "¿Por qué no puedo conectarme a Wi-Fi?",
+      "respuesta": [
+        "Revisa que el enrutador esté encendido y funcionando, asegúrate de que la conexión Wi-Fi de tu dispositivo esté habilitada, y verifica la configuración de red."
+      ]
+    },
+    {
+      "pregunta": "¿Cómo reiniciar mi enrutador?",
+      "respuesta": [
+        "Desconecta el enrutador de la corriente eléctrica, espera 30 segundos y vuelve a conectarlo. Esto reiniciará el enrutador."
+      ]
+    },
+    {
+      "pregunta": "¿Qué hacer si tengo una conexión a Internet lenta?",
+      "respuesta": [
+        "Reinicia tu enrutador, verifica que no haya descargas o programas en segundo plano usando ancho de banda, y considera actualizar tu plan de Internet si el problema persiste."
+      ]
+    },
+    {
+      "pregunta": "¿Cómo configurar una red doméstica?",
+      "respuesta": [
+        "Conecta tu enrutador al módem, asegúrate de que los dispositivos estén conectados al mismo enrutador y configura la red a través de la interfaz de administración del enrutador."
+      ]
+    },
+    {
+      "pregunta": "¿Qué significa el error de pantalla azul 'IRQL_NOT_LESS_OR_EQUAL'?",
+      "respuesta": [
+        "Este error suele estar relacionado con controladores de hardware defectuosos o mal configurados. Intenta actualizar los controladores y desinstalar software reciente."
+      ]
+    },
+    {
+      "pregunta": "¿Cómo solucionar el error 'Boot Device Not Found'?",
+      "respuesta": [
+        "Revisa si el disco duro está correctamente conectado y configurado en la BIOS. Si el problema persiste, es posible que el disco duro esté dañado."
+      ]
+    },
+    {
+      "pregunta": "¿Qué hacer si aparece el error '0x0000007B'?",
+      "respuesta": [
+        "Este error suele estar relacionado con un problema en el controlador del disco. Intenta acceder a la BIOS y cambiar el modo del disco duro a AHCI o IDE."
+      ]
+    },
+    {
+      "pregunta": "¿Cómo solucionar el error 'Driver IRQL Not Less or Equal'?",
+      "respuesta": [
+        "Este error suele ser causado por controladores defectuosos o desactualizados. Actualiza los controladores del hardware o desinstala los que se instalaron recientemente."
+      ]
+    },
+    {
+      "pregunta": "¿Cómo puedo desinstalar un programa que no responde?",
+      "respuesta": [
+        "Accede al Panel de Control en Windows, selecciona 'Programas y Características', elige el programa problemático y haz clic en 'Desinstalar'."
+      ]
+    },
+    {
+      "pregunta": "¿Por qué mi software de antivirus no se actualiza?",
+      "respuesta": [
+        "Asegúrate de estar conectado a Internet, verifica que la licencia del antivirus esté vigente y que no haya otro software de seguridad interfiriendo."
+      ]
+    },
+    {
+      "pregunta": "¿Cómo puedo recuperar archivos borrados accidentalmente?",
+      "respuesta": [
+        "Revisa la Papelera de Reciclaje o usa un programa de recuperación de datos como Recuva para intentar recuperar los archivos borrados."
+      ]
+    },
+    {
+      "pregunta": "¿Qué hacer si una aplicación se cierra inesperadamente?",
+      "respuesta": [
+        "Intenta reinstalar la aplicación, actualiza los controladores gráficos y asegúrate de que tu sistema operativo esté actualizado."
+      ]
+    },
+    {
+      "pregunta": "¿Con qué frecuencia debo limpiar mi computadora?",
+      "respuesta": [
+        "Se recomienda limpiar el polvo del interior de tu computadora al menos cada seis meses para evitar sobrecalentamiento y fallos en el hardware."
+      ]
+    },
+    {
+      "pregunta": "¿Cómo puedo desfragmentar mi disco duro?",
+      "respuesta": [
+        "Accede a 'Desfragmentar y Optimizar Unidades' en Windows, selecciona el disco que deseas desfragmentar y haz clic en 'Optimizar'."
+      ]
+    },
+    {
+      "pregunta": "¿Qué hacer para evitar el sobrecalentamiento?",
+      "respuesta": [
+        "Limpia regularmente los ventiladores y disipadores, asegúrate de que haya buena ventilación en la carcasa y considera usar un cooler adicional si es necesario."
+      ]
+    },
+    {
+      "pregunta": "¿Cómo crear un punto de restauración en Windows?",
+      "respuesta": [
+        "Accede a 'Restaurar Sistema', selecciona 'Crear un punto de restauración', elige la unidad y haz clic en 'Crear'."
+      ]
+    },
+    {
+      "pregunta": "¿Por qué mi laptop no carga?",
+      "respuesta": [
+        "Verifica que el cable de alimentación esté en buen estado, revisa el adaptador de corriente y asegúrate de que el puerto de carga de la laptop no esté dañado."
+      ]
+    },
+    {
+      "pregunta": "¿Cómo puedo prolongar la vida de la batería de mi laptop?",
+      "respuesta": [
+        "Reduce el brillo de la pantalla, desactiva dispositivos y aplicaciones no necesarias, y evita cargar la batería al 100% constantemente."
+      ]
+    },
+    {
+      "pregunta": "¿Qué hacer si la batería de mi laptop se descarga rápidamente?",
+      "respuesta": [
+        "Verifica que no haya aplicaciones consumiendo demasiada energía, calibra la batería, y considera reemplazarla si está vieja o dañada."
+      ]
+    },
+    {
+      "pregunta": "¿Cómo solucionar un disco duro que no es reconocido por el BIOS?",
+      "respuesta": [
+        "Verifica las conexiones SATA y de energía, prueba el disco en otro puerto o cable, asegúrate de que el disco esté habilitado en la configuración del BIOS y actualiza el firmware del BIOS si es necesario."
+      ]
+    },
+    {
+      "pregunta": "¿Qué hacer si una computadora no pasa el POST (Power On Self Test)?",
+      "respuesta": [
+        "Revisa la memoria RAM, asegúrate de que los módulos estén bien insertados. Comprueba la tarjeta gráfica y los cables de alimentación. Si el problema persiste, intenta realizar un reinicio de la BIOS o sustituir la fuente de alimentación."
+      ]
+    },
+    {
+      "pregunta": "¿Por qué mi computadora se apaga sola después de unos minutos?",
+      "respuesta": [
+        "Es probable que el sistema esté sobrecalentándose. Revisa los ventiladores, la pasta térmica del procesador y asegúrate de que no haya polvo bloqueando los disipadores. Además, verifica las temperaturas con herramientas de monitoreo de hardware."
+      ]
+    },
+    {
+      "pregunta": "¿Cómo reparar un archivo de sistema dañado en Windows?",
+      "respuesta": [
+        "Ejecuta el comando 'sfc /scannow' desde una consola con privilegios de administrador para reparar archivos de sistema dañados. Si no resuelve el problema, prueba con 'DISM /Online /Cleanup-Image /RestoreHealth'."
+      ]
+    },
+    {
+      "pregunta": "¿Qué puede causar pantallas azules (BSOD) frecuentes en una computadora?",
+      "respuesta": [
+        "Los BSOD pueden deberse a problemas de hardware, controladores corruptos o incompatibles, o fallos en la memoria RAM. Usa herramientas como MemTest86 para verificar la memoria, actualiza los controladores y revisa el visor de eventos para más detalles."
+      ]
+    },
+    {
+      "pregunta": "¿Cómo diagnosticar fallos en la tarjeta gráfica?",
+      "respuesta": [
+        "Prueba con un monitor diferente, revisa si el ventilador de la GPU está funcionando, verifica la instalación correcta de los controladores y prueba la tarjeta gráfica en otro equipo si es posible."
+      ]
+    },
+    {
+      "pregunta": "¿Qué hacer si la batería de la laptop no carga correctamente?",
+      "respuesta": [
+        "Verifica el adaptador de corriente y el puerto de carga. Si están bien, actualiza el firmware del BIOS o prueba con una batería diferente. También puedes recalibrar la batería descargándola por completo y cargándola al 100% sin interrupciones."
+      ]
+    },
+    {
+      "pregunta": "¿Cómo reparar un sistema operativo dañado sin perder datos?",
+      "respuesta": [
+        "Intenta iniciar el sistema desde un medio de instalación de Windows y usa la opción de 'Reparar el equipo'. Otra opción es acceder a la herramienta 'Restaurar sistema' o realizar una reparación in-situ conservando los archivos personales."
+      ]
+    },   
+  {
     "pregunta": "como soluciono problemas de rendimiento",
     "respuesta": [
       "Primero, revisa si hay programas que están usando demasiados recursos. Puedes usar el Administrador de Tareas para esto. Asegúrate también de que tu sistema operativo y tus programas estén actualizados."

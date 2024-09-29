@@ -3,7 +3,7 @@ from tkinter import ttk
 from procesamiento import buscar_respuesta, cargar_conocimiento
 from agregar_respuesta import agregar_respuesta
 from retroalimentacion import Feedback
-
+import json
 
 
 class AsistenteReparacion(tk.Tk):
@@ -13,10 +13,11 @@ class AsistenteReparacion(tk.Tk):
         self.title("Sistema Experto de Reparación de Equipos")
         self.geometry("500x600")
         self.configure(bg="#F0F0F5")
-        
+
         # Cargar conocimiento desde archivo al iniciar la aplicación
         self.conocimiento = cargar_conocimiento()
 
+        # Cargar el feedback
         self.feedback = Feedback()
 
         self.create_widgets()
@@ -92,14 +93,15 @@ class AsistenteReparacion(tk.Tk):
         pregunta = self.entry.get().strip()
         if pregunta:
             self.mostrar_mensaje("Tú: " + pregunta, "usuario")
-            
-            # Sistema de búsqueda en el conocimiento cargado
             respuesta = buscar_respuesta(pregunta, self.conocimiento)
-            
             self.mostrar_mensaje("Bot: " + respuesta, "bot")
             
+            # Llamará a la ventana de aprendizaje si no encuentra una respuesta
             if respuesta.startswith("Lo siento, no tengo una respuesta para eso"):
                 self.ventana_aprendizaje(pregunta)
+            else:
+                # Si hay una respuesta válida, mostrar opciones de retroalimentación
+                self.mostrar_retroalimentacion(pregunta, respuesta)
             
             self.entry.delete(0, tk.END)
 
@@ -125,22 +127,6 @@ class AsistenteReparacion(tk.Tk):
 
         self.canvas.configure(scrollregion=self.canvas.bbox("all"))
         self.canvas.yview_moveto(1.0)
-
-def mostrar_retroalimentacion(self, pregunta, respuesta):
-    feedback_frame = tk.Frame(self.scrollable_frame, bg="#FFFFFF")
-    feedback_frame.pack(fill=tk.X, padx=10, pady=5)
-
-    tk.Label(feedback_frame, text="¿Te fue útil esta respuesta?", font=("Helvetica", 10)).pack(side=tk.LEFT)
-    
-    tk.Button(feedback_frame, text="Sí", command=lambda: self.procesar_feedback(pregunta, respuesta, True)).pack(side=tk.LEFT, padx=5)
-    tk.Button(feedback_frame, text="No", command=lambda: self.procesar_feedback(pregunta, respuesta, False)).pack(side=tk.LEFT)
-
-def procesar_feedback(self, pregunta, respuesta, fue_util):
-    if fue_util:
-        self.mostrar_mensaje("¡Gracias por tu retroalimentación!", "bot")
-    else:
-        self.mostrar_mensaje("Lo sentimos, intentaremos mejorar.", "bot")
-
 
     def ventana_aprendizaje(self, pregunta):
         ventana_agregar = tk.Toplevel(self)
@@ -168,6 +154,38 @@ def procesar_feedback(self, pregunta, respuesta, fue_util):
                                    activeforeground="#FFFFFF", font=("Helvetica", 12),
                                    relief=tk.FLAT, bd=0, padx=15, pady=5, cursor="hand2")
         agregar_button.pack()
+
+    def mostrar_retroalimentacion(self, pregunta, respuesta):
+        feedback_frame = tk.Frame(self.scrollable_frame, bg="#FFFFFF")
+        feedback_frame.pack(fill=tk.X, padx=10, pady=5)
+
+        tk.Label(feedback_frame, text="¿Te fue útil esta respuesta?", font=("Helvetica", 10)).pack(side=tk.LEFT)
+        
+        tk.Button(feedback_frame, text="Sí", command=lambda: self.procesar_feedback(pregunta, respuesta, True)).pack(side=tk.LEFT, padx=5)
+        tk.Button(feedback_frame, text="No", command=lambda: self.procesar_feedback(pregunta, respuesta, False)).pack(side=tk.LEFT)
+
+    def procesar_feedback(self, pregunta, respuesta, fue_util):
+        valoracion = 1 if fue_util else 0  # "Sí" es 1 y "No" es 0
+        self.feedback.agregar_feedback(pregunta, respuesta, valoracion)
+
+        if fue_util:
+            self.mostrar_mensaje("¡Gracias por tu retroalimentación!", "bot")
+        else:
+            self.mostrar_mensaje("Lo sentimos, intentaremos mejorar.", "bot")
+    
+    def cargar_feedback(self):
+        try:
+            with open('feedback.json', 'r', encoding='utf-8') as archivo:
+                    # Leer el archivo y eliminar espacios en blanco
+                contenido = archivo.read().strip()
+                  # Si el archivo está vacío
+                if not contenido:  
+                    # Retornar una lista vacía
+                    return []  
+                return json.loads(contenido)
+        except (FileNotFoundError, json.JSONDecodeError):
+            # Si no existe el archivo o hay un error en el formato JSON
+            return []  
 
 if __name__ == "__main__":
     app = AsistenteReparacion()
